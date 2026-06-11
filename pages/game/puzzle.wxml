@@ -1,0 +1,49 @@
+<view class="container">
+  <view class="game-header">
+    <view class="back-btn" bindtap="goBack">
+      <text>← 返回</text>
+    </view>
+    <text class="game-title">🧩 益智拼图</text>
+    <view class="level-info">
+      <text>第 {{currentLevel}} 关</text>
+    </view>
+  </view>
+  
+  <view class="puzzle-grid">
+    <view 
+      wx:for="{{puzzleData}}" 
+      wx:key="index"
+      class="puzzle-item"
+      bindtap="onPuzzleClick"
+      data-index="{{index}}"
+      style="background-color: {{item.color}}"
+    >
+      <text wx:if="{{item.value !== 0}}" class="puzzle-number">{{item.value}}</text>
+    </view>
+  </view>
+  
+  <view class="game-controls">
+    <view class="control-btn" bindtap="shuffle">
+      <text>🔄 重新打乱</text>
+    </view>
+    <view class="control-btn" bindtap="reset">
+      <text>🔁 重置</text>
+    </view>
+  </view>
+  
+  <view class="level-select">
+    <text class="select-title">选择关卡:</text>
+    <view class="level-grid">
+      <view 
+        wx:for="{{levels}}" 
+        wx:key="index"
+        class="level-item"
+        bindtap="selectLevel"
+        data-level="{{index + 1}}"
+        style="background-color: {{index < unlockedLevel ? '#4CAF50' : '#BDBDBD'}};"
+      >
+        <text>{{index + 1}}</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/game/game",
+    "pages/learning/learning",
+    "pages/story/story"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#87CEEB",
+    "navigationBarTitleText": "衡佳瑶学习乐园",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#E0F7FA"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

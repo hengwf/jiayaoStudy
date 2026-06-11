@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="game-header">
+    <view class="back-btn" bindtap="goBack">
+      <text>← 返回</text>
+    </view>
+    <text class="game-title">📚 拼音学习</text>
+  </view>
+  <view class="card">
+    <text class="title">拼音学习</text>
+    <view class="text-center">
+      <text>拼音学习内容开发中...</text>
+    </view>
+  </view>
+</view>

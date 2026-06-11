@@ -1,0 +1,157 @@
+.container {
+  padding: 30rpx;
+  padding-bottom: 40rpx;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.back-btn {
+  background: #6B8E23;
+  color: white;
+  padding: 15rpx 25rpx;
+  border-radius: 20rpx;
+  font-size: 28rpx;
+}
+
+.game-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #FF6347;
+}
+
+.level-info {
+  font-size: 28rpx;
+  color: #8B4513;
+}
+
+.game-stats {
+  display: flex;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20rpx;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+}
+
+.stat-label {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.stat-value {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #FF6347;
+  margin-left: 10rpx;
+}
+
+.whack-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20rpx;
+  margin-bottom: 30rpx;
+  aspect-ratio: 1;
+}
+
+.hole {
+  background: #8B4513;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20rpx;
+  position: relative;
+  box-shadow: inset 0 10rpx 20rpx rgba(0,0,0,0.3);
+}
+
+.mole {
+  font-size: 60rpx;
+  transition: opacity 0.2s;
+  position: absolute;
+  bottom: 20rpx;
+}
+
+.mole-emoji {
+  animation: popUp 0.3s;
+}
+
+@keyframes popUp {
+  0% { transform: translateY(50rpx); }
+  100% { transform: translateY(0); }
+}
+
+.hit-effect {
+  font-size: 40rpx;
+  position: absolute;
+  top: 10rpx;
+  animation: hit 0.3s;
+}
+
+@keyframes hit {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.5); }
+}
+
+.game-controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40rpx;
+}
+
+.control-btn {
+  background: linear-gradient(180deg, #4CAF50 0%, #388E3C 100%);
+  color: white;
+  padding: 25rpx 60rpx;
+  border-radius: 30rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.control-btn:active {
+  transform: scale(0.96);
+}
+
+.level-select {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20rpx;
+  padding: 30rpx;
+}
+
+.select-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+  display: block;
+}
+
+.level-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20rpx;
+}
+
+.level-item {
+  height: 80rpx;
+  border-radius: 15rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.level-item:active {
+  transform: scale(0.95);
+}

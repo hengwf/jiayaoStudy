@@ -1,0 +1,3 @@
+.container { padding: 40rpx; }
+.title { font-size: 40rpx; font-weight: bold; color: #FF6347; }
+.btn { margin-top: 40rpx; padding: 20rpx; background: #4CAF50; color: white; text-align: center; border-radius: 20rpx; }

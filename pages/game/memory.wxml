@@ -1,0 +1,62 @@
+<view class="container">
+  <view class="game-header">
+    <view class="back-btn" bindtap="goBack">
+      <text>← 返回</text>
+    </view>
+    <text class="game-title">🃏 记忆翻牌</text>
+    <view class="level-info">
+      <text>第 {{currentLevel}} 关</text>
+    </view>
+  </view>
+  
+  <view class="game-stats">
+    <view class="stat-item">
+      <text class="stat-label">🎯 得分:</text>
+      <text class="stat-value">{{score}}</text>
+    </view>
+    <view class="stat-item">
+      <text class="stat-label">🔑 配对:</text>
+      <text class="stat-value">{{matches}} / {{totalPairs}}</text>
+    </view>
+  </view>
+  
+  <view class="memory-grid">
+    <view 
+      wx:for="{{cards}}" 
+      wx:key="index"
+      class="card-item"
+      bindtap="flipCard"
+      data-index="{{index}}"
+      style="transform: rotateY({{item.flipped ? 180 : 0}}deg);"
+    >
+      <view class="card-front">
+        <text class="card-back-icon">❓</text>
+      </view>
+      <view class="card-back">
+        <text class="card-emoji">{{item.emoji}}</text>
+      </view>
+    </view>
+  </view>
+  
+  <view class="game-controls">
+    <view class="control-btn" bindtap="resetGame">
+      <text>🔄 重新开始</text>
+    </view>
+  </view>
+  
+  <view class="level-select">
+    <text class="select-title">选择关卡:</text>
+    <view class="level-grid">
+      <view 
+        wx:for="{{levels}}" 
+        wx:key="index"
+        class="level-item"
+        bindtap="selectLevel"
+        data-level="{{index + 1}}"
+        style="background-color: {{index < unlockedLevel ? '#4CAF50' : '#BDBDBD'}};"
+      >
+        <text>{{index + 1}}</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 0;
+}
+
+.back-btn {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.game-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #FF6347;
+}

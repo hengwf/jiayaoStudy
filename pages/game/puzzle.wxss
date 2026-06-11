@@ -1,0 +1,112 @@
+.container {
+  padding: 30rpx;
+  padding-bottom: 40rpx;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.back-btn {
+  background: #6B8E23;
+  color: white;
+  padding: 15rpx 25rpx;
+  border-radius: 20rpx;
+  font-size: 28rpx;
+}
+
+.game-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #FF6347;
+}
+
+.level-info {
+  font-size: 28rpx;
+  color: #8B4513;
+}
+
+.puzzle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15rpx;
+  margin-bottom: 30rpx;
+  aspect-ratio: 1;
+}
+
+.puzzle-item {
+  border-radius: 15rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4rpx 10rpx rgba(0,0,0,0.2);
+  transition: transform 0.15s;
+}
+
+.puzzle-item:active {
+  transform: scale(0.95);
+}
+
+.puzzle-number {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: white;
+}
+
+.game-controls {
+  display: flex;
+  justify-content: center;
+  gap: 40rpx;
+  margin-bottom: 40rpx;
+}
+
+.control-btn {
+  background: linear-gradient(180deg, #2196F3 0%, #1976D2 100%);
+  color: white;
+  padding: 20rpx 40rpx;
+  border-radius: 25rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.control-btn:active {
+  transform: scale(0.96);
+}
+
+.level-select {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20rpx;
+  padding: 30rpx;
+}
+
+.select-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+  display: block;
+}
+
+.level-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20rpx;
+}
+
+.level-item {
+  height: 80rpx;
+  border-radius: 15rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.level-item:active {
+  transform: scale(0.95);
+}

@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="header">
+    <text class="main-title">🐉 衡佳瑶学习乐园 🐉</text>
+    <text class="sub-title">欢迎来到衡佳瑶的世界！选择一个开始探索吧~</text>
+  </view>
+  
+  <view class="character-section">
+    <view class="character">
+      <text class="character-emoji">🧒</text>
+    </view>
+  </view>
+  
+  <view class="menu-grid">
+    <view class="menu-item game" bindtap="goToGame">
+      <text class="menu-icon">🎮</text>
+      <text class="menu-text">游戏中心</text>
+    </view>
+    <view class="menu-item learning" bindtap="goToLearning">
+      <text class="menu-icon">📚</text>
+      <text class="menu-text">学习乐园</text>
+    </view>
+    <view class="menu-item story" bindtap="goToStory">
+      <text class="menu-icon">📖</text>
+      <text class="menu-text">故事天地</text>
+    </view>
+  </view>
+  
+  <view class="score-section">
+    <text class="score-text">🏆 总分: {{score}}</text>
+  </view>
+</view>

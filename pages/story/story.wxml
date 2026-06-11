@@ -1,0 +1,4 @@
+<view class="container">
+  <text class="title">📖 故事天地</text>
+  <view class="btn" bindtap="goBack">返回</view>
+</view>
